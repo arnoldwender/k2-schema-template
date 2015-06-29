@@ -303,7 +303,7 @@ defined('_JEXEC') or die;
       <img itemprop="image" class="itemAuthorAvatar" src="<?php echo $this->item->author->avatar; ?>" alt="<?php echo K2HelperUtilities::cleanHtml($this->item->author->name); ?>" />
       <?php endif; ?>
       <div class="itemAuthorDetails">
-        <h3 class="itemAuthorName"> <a rel="author nofollow" href="<?php echo $this->item->author->link; ?>"><span itemprop="author"><?php echo $this->item->author->name; ?></span></a> </h3>
+        <h3 class="itemAuthorName"> <a title="<?php echo $this->item->author->name; ?>" rel="author nofollow" href="<?php echo $this->item->author->link; ?>"><span itemprop="author"><?php echo $this->item->author->name; ?></span></a> </h3>
         <?php if($this->item->params->get('itemAuthorDescription') && !empty($this->item->author->profile->description)): ?>
         <div itemprop="description"><p><?php echo $this->item->author->profile->description; ?></p></div>
         <?php endif; ?>
